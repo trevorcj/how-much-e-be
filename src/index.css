@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Danfo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffd904;
+  --black: #000;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 140px;
+  padding: 60px 80px 80px 80px;
+  background-color: var(--yellow);
+  /* height: 100vh; */
+}
+
+nav img {
+  width: 80px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-family: "Danfo", sans-serif;
+  color: var(--black);
+  text-align: center;
+  text-shadow: 0px 12px 0px #fff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  text-transform: uppercase;
+  max-width: 700px;
+}
+
+main p {
+  color: var(--black);
+  text-align: center;
+  font-family: "Founders Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 700px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  padding: 20px 40px 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--black);
+  color: var(--yellow);
+  font-family: "Founders Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* TABLE COMPONENt */
+
+.table-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.table-heading {
+  font-family: "Founders Grotesk", sans-serif;
+  color: var(--black);
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.responsive-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.howmuchebe-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  font-family: "Founders Grotesk", sans-serif;
+  background-color: #fff;
+  color: var(--black);
+  border: 2px solid var(--yellow);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.howmuchebe-table thead {
+  background-color: #fffce2;
+  color: var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.howmuchebe-table th,
+.howmuchebe-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+}
+
+.howmuchebe-table tbody tr:hover {
+  background-color: #fffce26f;
+  transition: 0.3s;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  header {
+    padding: 50px 40px;
+  }
+
+  h1 {
+    font-size: 80px;
+    line-height: 88px;
+    max-width: 95%;
+    text-shadow: 0px 8px 0px #fff;
+  }
+
+  main p {
+    font-size: 20px;
+    max-width: 95%;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 22px;
+    padding: 18px 36px 10px 36px;
+  }
+
+  .table-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .howmuchebe-table th,
+  .howmuchebe-table td {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    gap: 70px;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 72px;
+    text-shadow: 0px 6px 0px #fff;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .table-heading {
+    font-size: 1.2rem;
+  }
+
+  .finance-table th,
+  .finance-table td {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .table-heading {
+    font-size: 28px;
+  }
+
+  .howmuchebe-table th,
+  .howmuchebe-table td {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
