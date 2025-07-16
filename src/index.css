@@ -11,6 +11,22 @@
   --black: #000;
 }
 
+/* FONT VARIATIONS */
+/* AEONIK */
+@font-face {
+  font-family: "Aeonik";
+  src: url("../src/assets/fonts/Aeonik-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../src/assets/fonts/Aeonik-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -50,7 +66,7 @@ h1 {
 main p {
   color: var(--black);
   text-align: center;
-  font-family: "Founders Grotesk";
+  font-family: "Aeonik", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -64,14 +80,14 @@ a {
 
 .btn {
   display: flex;
-  padding: 20px 40px 12px 40px;
+  padding: 20px 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 50px;
   background: var(--black);
   color: var(--yellow);
-  font-family: "Founders Grotesk";
+  font-family: "Aeonik", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -88,7 +104,7 @@ a {
 }
 
 .table-heading {
-  font-family: "Founders Grotesk", sans-serif;
+  font-family: "Aeonik", sans-serif;
   color: var(--black);
   font-size: 30px;
   text-align: center;
@@ -104,7 +120,7 @@ a {
   width: 100%;
   min-width: 700px;
   border-collapse: collapse;
-  font-family: "Founders Grotesk", sans-serif;
+  font-family: "Aeonik", sans-serif;
   background-color: #fff;
   color: var(--black);
   border: 2px solid var(--yellow);
@@ -155,7 +171,7 @@ a {
   .btn {
     padding: 18px 36px;
     font-size: 22px;
-    padding: 18px 36px 10px 36px;
+    padding: 18px 36px;
   }
 
   .table-heading {
