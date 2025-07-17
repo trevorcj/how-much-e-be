@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Aeonik", sans-serif;
 }
 
 :root {
@@ -78,6 +79,20 @@ a {
   text-decoration: none;
 }
 
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#primary {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
 .btn {
   display: flex;
   padding: 20px 40px;
@@ -100,7 +115,6 @@ a {
   width: 100%;
   padding: 40px 20px;
   background-color: #fff;
-  cursor: pointer;
 }
 
 .table-heading {
@@ -147,6 +161,96 @@ a {
 .howmuchebe-table tbody tr:hover {
   background-color: #fffce26f;
   transition: 0.3s;
+}
+
+/* SPINNER */
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000cc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.spinner svg {
+  width: 80px;
+  height: 80px;
+  fill: var(--yellow);
+  animation: spin 1s linear infinite;
+}
+
+.spinner svg path {
+  color: rgba(22, 22, 22, 0.379);
+  stroke-width: 2;
+}
+
+.sr-only {
+  color: #f0f0f0;
+  font-family: "Aeonik", sans-serif;
+  font-size: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ALERTS */
+.alert-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  max-width: 90%;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  z-index: 1000;
+  animation: slideInOut 3s forwards;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  10% {
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+}
+
+/* SUCCESS ✅ */
+.successMessage {
+  background-color: #27ae60;
+  color: #d1f7d6;
+}
+
+/* ERROR */
+
+.error {
+  background-color: #e74c3c;
+  color: #ffd6d6;
 }
 
 /* RESPONSIVENESS */

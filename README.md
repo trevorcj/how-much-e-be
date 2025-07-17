@@ -1,12 +1,95 @@
-# React + Vite
+# HowMucheBe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**HowMucheBe** is a web app for sharing and viewing prices of items across different locations. Users can submit prices of items, view listings, and contribute to crowdsourced local data.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View item listings with price, unit, and location
+- Submit new items using a form
+- Responsive table layout for displaying listings
+- Data is fetched from an external API (MantaHQ)
+- React Router for navigation
+- Local font integration and custom design
 
-## Expanding the ESLint configuration
+### Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[🔗 Visit HowMucheBe](https://howmuchebe.netlify.app)
+
+---
+
+## Tech Stack
+
+- React + Vite
+- React Router
+- CSS
+- Netlify for deployment
+- MantaHQ API for backend data
+
+## 📁 Folder Structure
+
+```
+public/
+│ ...
+src/
+│ ├─ components/
+│ │ ├─ Button.jsx
+│ │ ├─ Header.jsx
+│ │ └─ Spinner.jsx
+│ │ └─ Table.jsx
+│ ├─ assets/
+│ │ └─ fonts/
+│ ├─ App.jsx
+│ ├─ main.jsx
+│ └─ index.css
+```
+
+## 🧪 Setup Instructions
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/trevorcj/how-much-e-be.git
+cd how-much-e-be
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run the development server
+
+```bash
+npm run dev
+```
+
+4. Preview it on your phone (same Wi-Fi) using:
+
+```bash
+npm run dev -- --host
+```
+
+5. Build for production
+
+```bash
+npm run build
+```
+
+6. Preview production build locally
+
+```bash
+npm run preview
+```
+
+## Credits
+
+- UI/UX by [Chimamanda Justus](x.com/trevoppa)
+
+- API powered by MantaHQ
+
+- Inspired by real-world market needs
+
+---
+
+Say hello 👋🏽 on [LinkedIn](https://linkedin.com/in/trevorcjustus) or [X](x.com/trevoppa)!
