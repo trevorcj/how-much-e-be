@@ -1,6 +1,6 @@
 // import "../index.css";
 
-function Spinner() {
+function Spinner({ text }) {
   return (
     <div className="spinner" role="status">
       <svg
@@ -19,7 +19,7 @@ function Spinner() {
           fill="currentFill"
         />
       </svg>
-      <span className="sr-only">Fetching prices</span>
+      <span className="sr-only">{text}</span>
     </div>
   );
 }

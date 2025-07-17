@@ -1,9 +1,5 @@
 function Button({ text }) {
-  return (
-    <a className="btn" href="#">
-      {text}
-    </a>
-  );
+  return <p className="btn">{text}</p>;
 }
 
 export default Button;

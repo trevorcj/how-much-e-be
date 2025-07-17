@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-export default function Header({ paragraph, heading, button, route }) {
+export default function Header({ paragraph, heading, button, route, scroll }) {
   return (
     <header>
       <nav>
@@ -17,7 +17,17 @@ export default function Header({ paragraph, heading, button, route }) {
             <Button text={button} />
           </Link>
         </div>
-        <p className="scroll">Scroll &darr;</p>
+        <p
+          className="scroll"
+          onClick={() => {
+            window.scroll({
+              top: 10000,
+              behavior: "smooth",
+            });
+          }}
+        >
+          {scroll}
+        </p>
       </main>
     </header>
   );

@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import SubmitForm from "../components/SubmitForm";
+import Footer from "../components/Footer";
 
 function Submit() {
   const h1 = "Submit a price";
@@ -6,7 +8,15 @@ function Submit() {
 
   return (
     <>
-      <Header paragraph={para} heading={h1} button="See prices" route="/" />
+      <Header
+        paragraph={para}
+        heading={h1}
+        button="See prices"
+        route="/"
+        scroll="Scroll &darr;"
+      />
+      <SubmitForm />
+      <Footer />
     </>
   );
 }
