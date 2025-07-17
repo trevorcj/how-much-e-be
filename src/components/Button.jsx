@@ -1,6 +1,6 @@
-function Button({ text, id }) {
+function Button({ text }) {
   return (
-    <a className="btn" id={id} href="#">
+    <a className="btn" href="#">
       {text}
     </a>
   );

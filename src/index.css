@@ -51,6 +51,23 @@ main {
   padding-bottom: 20px;
 }
 
+.scroll {
+  font-size: 20px;
+  color: #0000008a;
+  cursor: pointer;
+  animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 h1 {
   font-family: "Danfo", sans-serif;
   color: var(--black);
@@ -216,7 +233,7 @@ a {
   max-width: 90%;
   padding: 12px 20px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   color: #111;
   z-index: 1000;

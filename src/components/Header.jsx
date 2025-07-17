@@ -1,21 +1,23 @@
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ paragraph, heading, button, route }) {
   return (
     <header>
       <nav>
-        <img src="logo.svg" alt="App logo" />
+        <Link to="/">
+          <img src="logo.svg" alt="App logo" />
+        </Link>
       </nav>
       <main>
-        <h1>How much e be?</h1>
-        <p>
-          Find out today’s market prices around you. Get real-time prices for
-          food items from local markets across Naija.
-        </p>
+        <h1>{heading}</h1>
+        <p>{paragraph}</p>
         <div className="buttons">
-          <Button id=" " text="See items" />
-          <Button id="primary" text="Add a price" />
+          <Link to={route}>
+            <Button text={button} />
+          </Link>
         </div>
+        <p className="scroll">Scroll &darr;</p>
       </main>
     </header>
   );

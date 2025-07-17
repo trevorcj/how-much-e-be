@@ -3,7 +3,7 @@ export default function Table({ entries, error, loading, successMessage }) {
 
   return (
     <>
-      <div className="table-wrapper">
+      <div id="table" className="table-wrapper">
         <h2 className="table-heading">Recent Prices</h2>
         <div className="responsive-table">
           <table className="howmuchebe-table">
