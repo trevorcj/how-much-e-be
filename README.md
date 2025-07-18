@@ -13,7 +13,9 @@
 
 ### Live Demo
 
-[🔗 Visit HowMucheBe](https://howmuchebe.netlify.app)
+🔗 [Visit HowMucheBe](https://howmuchebe.netlify.app)
+
+![HowMucheBe Preview](readme-img.png)
 
 ---
 
