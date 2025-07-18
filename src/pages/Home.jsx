@@ -47,7 +47,6 @@ function Home() {
   }
 
   useEffect(() => {
-    document.title = "How Much E Be?";
     fetchEntries();
 
     setError("");
